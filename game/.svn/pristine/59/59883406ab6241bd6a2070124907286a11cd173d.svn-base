@@ -1,0 +1,51 @@
+﻿using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
+using UnityEngine.Events;
+using System;
+
+public enum MessageType { Success,Warning,Error }
+
+public class LoginManager : MonoBehaviour {
+
+    public UnityEvent OnLogin, OnLogout;
+
+
+    //Here you must put the code to check the authentication for a user
+    public void CheckAuthentication()
+    {
+    }
+
+
+    //here you must put the code when the authentication process is valid
+    protected void Login()
+    {
+    }
+
+    
+    //You must put the code for creating an account in this function
+    public void CreateAccount()
+    {
+       
+    }
+
+    //You can handle the logout here.
+    internal void Logout()
+    {
+    }
+    
+    //Facultative: you may send allow an user to get his password back by sending him a mail
+    public void RecoverPassword()
+    {
+    }
+
+    public void ResetPassword()
+    {
+    }
+
+    
+
+    /// <summary>
+    /// ////////END UI
+    /// </summary>
+}
